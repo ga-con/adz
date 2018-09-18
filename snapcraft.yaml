@@ -1,0 +1,16 @@
+name: adzpi
+version: 1.1.7
+summary: AdzPi Client
+description: |
+  AdzPi Client.
+
+confinement: devmode
+
+parts:
+  adzpi:
+    adzpi: dump
+    source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.zip
+
+apps:
+  adzpi:
+    command: adzpi client
