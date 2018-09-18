@@ -1,4 +1,4 @@
-name: adzpi
+name: adzpi-ga-con
 version: 1.1.7
 summary: AdzPi Client
 description: |
@@ -12,5 +12,5 @@ parts:
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.zip
 
 apps:
-  adzpi:
+  adzpi-ga-con:
     command: adzpi client
