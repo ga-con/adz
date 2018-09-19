@@ -1,16 +1,20 @@
 name: adzpi-ga-con
 version: 1.1.7
-summary: AdzPi Client
+summary:  AdzPi Bot
 description: |
-  AdzPi Client.
+  AdzPi Bot.
 
 confinement: devmode
 
-parts:
-  adzpi:
-    adzpi: dump
-    source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.zip
-
 apps:
   adzpi-ga-con:
-    command: adzpi client
+    command: adzpi client --config=/home/pi/adzrunner/config.toml
+    daemon: simple
+
+parts:
+  gobot-blink:
+    plugin: dump
+    source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
+
+architectures:
+  - arm64
