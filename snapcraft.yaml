@@ -5,6 +5,9 @@ description: |
   AdzRunner Corp.
 
 confinement: devmode
+architectures:
+  - build-on: arm64
+    run-on: arm64
 
 apps:
   boxbot-adzrunner:
@@ -20,6 +23,3 @@ parts:
       - fbi
     build-packages:
       - fbi
-
-architectures:
-  - arm64
