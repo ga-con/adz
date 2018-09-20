@@ -9,7 +9,7 @@ confinement: devmode
 apps:
   boxbot-adzrunner:
     command: adzpi client --config=/home/pi/adzrunner/config.toml
-    plugs: [home, network-bind, framebuffer, ppp]
+    plugs: [home, network, network-bind, framebuffer, ppp]
     daemon: simple
 
 parts:
