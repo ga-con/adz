@@ -12,7 +12,7 @@ architectures:
 apps:
   boxbot-adzrunner:
     command: adzpi client --config=/home/pi/adzrunner/config.toml
-    plugs: [home, network, network-bind, framebuffer, ppp]
+    plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
     daemon: simple
 
 parts:
