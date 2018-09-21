@@ -24,3 +24,8 @@ parts:
       - libjpeg-dev
       - libpng-dev
       - fbi
+    build-packages:
+      - imagemagick
+      - libjpeg-dev
+      - libpng-dev
+      - fbi
