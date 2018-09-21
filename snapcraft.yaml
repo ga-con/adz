@@ -21,4 +21,6 @@ parts:
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
     stage-packages:
       - imagemagick
+      - libjpeg-dev
+      - libpng-dev
       - fbi
