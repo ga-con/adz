@@ -20,6 +20,5 @@ parts:
     plugin: dump
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
     stage-packages:
-      - fbi
-    build-packages:
+      - imagemagick
       - fbi
