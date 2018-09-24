@@ -15,7 +15,7 @@ apps:
     plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
     daemon: simple
   fbi-ga-con:
-    command: fbi -f noto-mono -T 1 /home/pi/adzrunner/1.jpg
+    command: fbi -T 1 /home/pi/adzrunner/1.jpg
     daemon: simple
 
 parts:
@@ -25,7 +25,7 @@ parts:
     build-packages:
       - libjpeg62-dev
       - libpng12-dev
-      - fonts-noto-mono
+      - fonts-dejavu
 
     stage-packages:
       - libc6
@@ -39,6 +39,7 @@ parts:
       - zlib1g
       - fonts-droid-fallback
       - fonts-noto-mono
+      - fonts-dejavu
       - gsfonts
       - libcupsfilters1
       - libcupsimage2
