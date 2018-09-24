@@ -4,7 +4,7 @@ summary:  AdzRunner Corp.
 description: |
   AdzRunner Corp.
 
-confinement: strict
+confinement: devmode
 architectures:
   - build-on: arm64
     run-on: arm64
@@ -42,7 +42,6 @@ parts:
       - libpng12-0
       - libtiff5
       - zlib1g
-      - libfontconfig1
       - fonts-droid-fallback
       - fonts-noto-mono
       - fonts-dejavu
