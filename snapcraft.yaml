@@ -25,7 +25,9 @@ parts:
     build-packages:
       - libjpeg62-dev
       - libpng12-dev
+      - libfontconfig1-dev
       - fonts-dejavu
+      - fonts-dejavu-core
 
     stage-packages:
       - libc6
@@ -40,6 +42,7 @@ parts:
       - fonts-droid-fallback
       - fonts-noto-mono
       - fonts-dejavu
+      - fonts-dejavu-core
       - gsfonts
       - libcupsfilters1
       - libcupsimage2
