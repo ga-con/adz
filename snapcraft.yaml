@@ -33,7 +33,6 @@ parts:
       - fonts-dejavu-core
 
     stage-packages:
-      - fontconfig-config
       - libc6
       - libexif12
       - libfontconfig1
