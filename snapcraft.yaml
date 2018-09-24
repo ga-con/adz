@@ -26,7 +26,6 @@ parts:
      - libjpeg62-dev
      - libpng12-dev
     stage-packages:
-     - libfontconfig1
      - libc6
      - libexif12
      - libfontconfig1
