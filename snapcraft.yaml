@@ -5,7 +5,8 @@ description: |
   AdzRunner Corp.
 
 confinement: devmode
-architectures: [ arm64 ]
+architectures:
+  - on arm64: [arm64]
 
 apps:
   boxbot-adzrunner:
@@ -20,19 +21,18 @@ parts:
   boxbot-adzrunner:
     plugin: dump
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
-
     stage-packages:
-			- libc6
-			- libexif12
-			- libfontconfig1
-			- libfreetype6
-			- libgif7
-			- libjpeg62-turbo
-			- libpng12-0
-			- libtiff5
-			- zlib1g
-			- ghostscript
-			- imagemagick
-			- graphicsmagick-imagemagick-compat
-			- imagemagick-6.q16
-			- fbi
+     - libc6
+     - libexif12
+     - libfontconfig1
+     - libfreetype6
+     - libgif7
+     - libjpeg62-turbo
+     - libpng12-0
+     - libtiff5
+     - zlib1g
+     - ghostscript
+     - imagemagick
+     - graphicsmagick-imagemagick-compat
+     - imagemagick-6.q16
+     - fbi
