@@ -14,6 +14,9 @@ apps:
     command: adzpi client --config=/home/pi/adzrunner/config.toml
     plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
     daemon: simple
+  fbi-ga-con:
+    command: fbi -f noto-mono -T 1 /home/pi/adzrunner/1.jpg
+    daemon: simple
 
 parts:
   boxbot:
