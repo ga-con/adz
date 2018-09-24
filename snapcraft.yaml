@@ -32,6 +32,20 @@ parts:
       - libpng12-0
       - libtiff5
       - zlib1g
+      - fonts-droid-fallback
+      - fonts-noto-mono
+      - gsfonts
+      - libcupsfilters1
+      - libcupsimage2
+      - libgs9
+      - libgs9-common
+      - libijs-0.35
+      - libjbig2dec0
+      - liblcms2-2
+      - libopenjp2-7
+      - libpaper-utils
+      - libpaper1
+      - poppler-data
       - ghostscript
       - imagemagick
       - imagemagick-6.q16
