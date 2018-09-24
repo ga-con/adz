@@ -5,13 +5,10 @@ description: |
   AdzRunner Corp.
 
 confinement: devmode
-architectures:
-  - build-on: amd64
-    run-on: armhf
 
 apps:
   boxbot-adzrunner:
-    command: fbi -T 1 /home/pi/adzrunner/1.jpg
+    command: usr/bin/fbi -T 1 /home/pi/adzrunner/1.jpg
     plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
     daemon: simple
     environment:
