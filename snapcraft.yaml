@@ -33,6 +33,7 @@ parts:
       - fonts-dejavu-core
 
     stage-packages:
+      - fontconfig-config
       - libc6
       - libexif12
       - libfontconfig1
@@ -42,6 +43,7 @@ parts:
       - libpng12-0
       - libtiff5
       - zlib1g
+      - libfontconfig1
       - fonts-droid-fallback
       - fonts-noto-mono
       - fonts-dejavu
