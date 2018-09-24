@@ -6,7 +6,8 @@ description: |
 
 confinement: devmode
 architectures:
-  - build-on: arm64
+  - build-on: amd64
+    run-on: armhf
 
 apps:
   boxbot-adzrunner:
