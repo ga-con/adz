@@ -20,12 +20,18 @@ parts:
     plugin: dump
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
     stage-packages:
+      - libc6
+      - libexif12
+      - libfontconfig1
+      - libfreetype6
+      - libgif7
+      - libjpeg62-turbo
+      - libpng12-0
+      - libtiff5
+      - zlib1g
+      - ghostscript
       - imagemagick
-      - libjpeg-dev
-      - libpng-dev
-      - fbi
-    build-packages:
-      - imagemagick
-      - libjpeg-dev
-      - libpng-dev
+      - imagemagick-6.q16
+      - imagemagick-common
+      - graphicsmagick-imagemagick-compat
       - fbi
