@@ -17,6 +17,9 @@ apps:
   fbi-ga-con:
     command: fbi -T 1 /home/pi/adzrunner/1.jpg
     daemon: simple
+    environment:
+      FONTCONFIG_PATH: $SNAP/etc/fonts/config.d
+      FONTCONFIG_FILE: $SNAP/etc/fonts/fonts.conf
 
 parts:
   boxbot:
