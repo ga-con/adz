@@ -25,6 +25,8 @@ parts:
     build-packages:
       - libjpeg62-dev
       - libpng12-dev
+      - fonts-noto-mono
+
     stage-packages:
       - libc6
       - libexif12
