@@ -22,13 +22,17 @@ parts:
   boxbot-adzrunner:
     plugin: dump
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
+    build-packages:
+     - libjpeg62-dev
+     - libpng12-dev
     stage-packages:
+     - libfontconfig1
      - libc6
      - libexif12
      - libfontconfig1
      - libfreetype6
      - libgif7
-     - libjpeg62-turbo
+     - libjpeg62
      - libpng12-0
      - libtiff5
      - zlib1g
