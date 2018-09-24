@@ -5,61 +5,34 @@ description: |
   AdzRunner Corp.
 
 confinement: devmode
-architectures:
-  - build-on: arm64
-    run-on: arm64
+architectures: [ arm64 ]
 
 apps:
   boxbot-adzrunner:
-    command: adzpi client --config=/home/pi/adzrunner/config.toml
-    plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
-    daemon: simple
-  fbi-ga-con:
     command: fbi -T 1 /home/pi/adzrunner/1.jpg
+    plugs: [home, network, network-bind, framebuffer, ppp, libvirt]
     daemon: simple
     environment:
       FONTCONFIG_PATH: $SNAP/etc/fonts/config.d
       FONTCONFIG_FILE: $SNAP/etc/fonts/fonts.conf
 
 parts:
-  boxbot:
+  boxbot-adzrunner:
     plugin: dump
     source: https://github.com/ga-con/adz/releases/download/v$SNAPCRAFT_PROJECT_VERSION/adzpi_linux_arm.tar.gz
-    build-packages:
-      - libjpeg62-dev
-      - libpng12-dev
-      - libfontconfig1-dev
-      - fonts-dejavu
-      - fonts-dejavu-core
 
     stage-packages:
-      - libc6
-      - libexif12
-      - libfontconfig1
-      - libfreetype6
-      - libgif7
-      - libjpeg62
-      - libpng12-0
-      - libtiff5
-      - zlib1g
-      - fonts-droid-fallback
-      - fonts-noto-mono
-      - fonts-dejavu
-      - fonts-dejavu-core
-      - gsfonts
-      - libcupsfilters1
-      - libcupsimage2
-      - libgs9
-      - libgs9-common
-      - libijs-0.35
-      - libjbig2dec0
-      - liblcms2-2
-      - libopenjp2-7
-      - libpaper-utils
-      - libpaper1
-      - poppler-data
-      - ghostscript
-      - imagemagick
-      - imagemagick-6.q16
-      - imagemagick-common
-      - fbi
+			- libc6
+			- libexif12
+			- libfontconfig1
+			- libfreetype6
+			- libgif7
+			- libjpeg62-turbo
+			- libpng12-0
+			- libtiff5
+			- zlib1g
+			- ghostscript
+			- imagemagick
+			- graphicsmagick-imagemagick-compat
+			- imagemagick-6.q16
+			- fbi
