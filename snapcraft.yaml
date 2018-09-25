@@ -5,6 +5,8 @@ description: |
   AdzRunner Corp.
 
 confinement: devmode
+architectures:
+- arm64
 
 apps:
   boxbot-adzrunner:
